@@ -45,7 +45,7 @@ image: https://matic.network/banners/matic-network-16x9.png
 - [GlobalDelegationCounter](#globaldelegationcounter)
 - [Delegation](#delegation)
 
-# Checkpoint
+## Checkpoint
 
 | Field            | Type    | Description                                 |
 | ---------------- | ------- | ------------------------------------------- |
@@ -61,7 +61,7 @@ image: https://matic.network/banners/matic-network-16x9.png
 | transactionHash  | Bytes!  | Transaction hash of proposed checkpoint     |
 | timeStamp        | BigInt! | The checkpoint timestamp                    |
 
-# StateSync
+## StateSync
 
 | Field                      | Type    | Description                                                |
 | -------------------------- | ------- | ---------------------------------------------------------- |
@@ -78,7 +78,7 @@ image: https://matic.network/banners/matic-network-16x9.png
 | timeStamp                  | BigInt! | Timestamp during sync of contract state                    |
 | blockNumber                | BigInt! | Block number of the state sync                             |
 
-# StateRegistration
+## StateRegistration
 
 | Field    | Type   | Description           |
 | -------- | ------ | --------------------- |
@@ -87,7 +87,7 @@ image: https://matic.network/banners/matic-network-16x9.png
 | receiver | Bytes! | Receiver address      |
 | sender   | Bytes! | Sender address        |
 
-# PlasmaExit
+## PlasmaExit
 
 | Field                  | Type     | Description                                                          |
 | ---------------------- | -------- | -------------------------------------------------------------------- |
@@ -107,7 +107,7 @@ image: https://matic.network/banners/matic-network-16x9.png
 | exitCompletedTxHash    | BigInt!  | Exit completed transaction hash                                      |
 | exitCompletedTimeStamp | BigInt!  | Exit started timestamp                                               |
 
-# PredicateRegistration
+## PredicateRegistration
 
 | Field            | Type    | Description                                |
 | ---------------- | ------- | ------------------------------------------ |
@@ -117,7 +117,7 @@ image: https://matic.network/banners/matic-network-16x9.png
 | timestamp        | BigInt! | Predicate registration timestamp           |
 | transactionHash  | Bytes!  | Transaction hash of predicate registration |
 
-# TokenMapping
+## TokenMapping
 
 | Field           | Type     | Description                        |
 | --------------- | -------- | ---------------------------------- |
@@ -129,7 +129,7 @@ image: https://matic.network/banners/matic-network-16x9.png
 | timestamp       | BigInt!  | Token mapping timestamp            |
 | transactionHash | Bytes!   | Transaction hash                   |
 
-# FxTokenMapping
+## FxTokenMapping
 
 | Field           | Type    | Description                                    |
 | --------------- | ------- | ---------------------------------------------- |
@@ -142,14 +142,14 @@ image: https://matic.network/banners/matic-network-16x9.png
 | timestamp       | BigInt! | Fx Token mapping timestamp                     |
 | transactionHash | Bytes!  | Fx transaction hash                            |
 
-# FxTokenMappingCounter
+## FxTokenMappingCounter
 
 | Field   | Type    | Description                        |
 | ------- | ------- | ---------------------------------- |
 | id      | ID!     | Fx token mapping Id                |
 | current | BigInt! | Current count for fx token mapping |
 
-# FxDeposit
+## FxDeposit
 
 | Field           | Type    | Description                               |
 | --------------- | ------- | ----------------------------------------- |
@@ -165,14 +165,14 @@ image: https://matic.network/banners/matic-network-16x9.png
 | timestamp       | BigInt! | Block timestamp                           |
 | transactionHash | Bytes!  | Fx transaction hash                       |
 
-# FxDepositCounter
+## FxDepositCounter
 
 | Field   | Type    | Description                  |
 | ------- | ------- | ---------------------------- |
 | id      | ID!     | Fx deposit counter Id        |
 | current | BigInt! | Current number of FxDeposits |
 
-# FxWithdraw
+## FxWithdraw
 
 | Field           | Type    | Description                               |
 | --------------- | ------- | ----------------------------------------- |
@@ -188,14 +188,14 @@ image: https://matic.network/banners/matic-network-16x9.png
 | timestamp       | BigInt! | Block timestamp                           |
 | transactionHash | Bytes!  | Fx transaction hash                       |
 
-# FxWithdrawCounter
+## FxWithdrawCounter
 
 | Field   | Type    | Description                     |
 | ------- | ------- | ------------------------------- |
 | id      | ID!     | Fx withdraw counter Id          |
 | current | BigInt! | Current number of FxWithdrawals |
 
-# Validator
+## Validator
 
 | Field             | Type     | Description                                                      |
 | ----------------- | -------- | ---------------------------------------------------------------- |
@@ -217,7 +217,7 @@ image: https://matic.network/banners/matic-network-16x9.png
 | auctionAmount     | BigInt!  | Auction amount                                                   |
 | isInAuction       | Boolean! | Checks wether validator is in auction                            |
 
-# StakeUpdate
+## StakeUpdate
 
 | Field           | Type    | Description                      |
 | --------------- | ------- | -------------------------------- |
@@ -229,21 +229,21 @@ image: https://matic.network/banners/matic-network-16x9.png
 | transactionHash | Bytes!  | Transaction hash                 |
 | logIndex        | BigInt! | Log index number                 |
 
-# GlobalDelegatorCounter
+## GlobalDelegatorCounter
 
 | Field   | Type    | Description                                                                    |
 | ------- | ------- | ------------------------------------------------------------------------------ |
 | id      | ID!     | Global delegator counter Id                                                    |
 | current | BigInt! | Keeps track of current delegator counter i.e. delegators are present as of now |
 
-# GlobalPlasmaExitCounter
+## GlobalPlasmaExitCounter
 
 | Field   | Type    | Description                                                                    |
 | ------- | ------- | ------------------------------------------------------------------------------ |
 | id      | ID!     | Global plasma exit counter                                                     |
 | current | BigInt! | Count of the plasma exits and till where have the process exits been processed |
 
-# Delegator
+## Delegator
 
 | Field           | Type    | Description                                                                 |
 | --------------- | ------- | --------------------------------------------------------------------------- |
@@ -257,7 +257,7 @@ image: https://matic.network/banners/matic-network-16x9.png
 | tokens          | BigInt! | total current shares (works until tokens are non-transferable)              |
 | claimedRewards  | BigInt! | Total claimed rewards                                                       |
 
-# Topup
+## Topup
 
 | Field          | Type    | Description       |
 | -------------- | ------- | ----------------- |
@@ -266,7 +266,7 @@ image: https://matic.network/banners/matic-network-16x9.png
 | topupAmount    | BigInt! | Topup amount      |
 | withdrawAmount | BigInt! | Amount withdrawn  |
 
-# StakingNFTTransfer
+## StakingNFTTransfer
 
 | Field             | Type      | Description                        |
 | ----------------- | --------- | ---------------------------------- |
@@ -276,7 +276,7 @@ image: https://matic.network/banners/matic-network-16x9.png
 | previousOwners    | [Bytes!]! | Array of previous owners addresses |
 | transactionHashes | [Bytes!]! | Array of transaction hashes        |
 
-# DelegatorUnbond
+## DelegatorUnbond
 
 | Field                  | Type     | Description                                |
 | ---------------------- | -------- | ------------------------------------------ |
@@ -293,7 +293,7 @@ image: https://matic.network/banners/matic-network-16x9.png
 | unbondClaimedTimeStamp | BigInt!  | Timestamp when unbond was claimed          |
 | activeStake            | BigInt!  | Active stake                               |
 
-# MaticTransfer
+## MaticTransfer
 
 | Field           | Type    | Description                 |
 | --------------- | ------- | --------------------------- |
@@ -306,14 +306,14 @@ image: https://matic.network/banners/matic-network-16x9.png
 | timestamp       | BigInt! | Transaction timestamp       |
 | transactionHash | Bytes!  | Transaction hash            |
 
-# GlobalDelegationCounter
+## GlobalDelegationCounter
 
 | Field   | Type    | Description                   |
 | ------- | ------- | ----------------------------- |
 | id      | ID!     | Delegation counter Id         |
 | current | BigInt! | Current number of delegations |
 
-# Delegation
+## Delegation
 
 | Field           | Type    | Description                                     |
 | --------------- | ------- | ----------------------------------------------- |
